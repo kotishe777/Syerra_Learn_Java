@@ -3,6 +3,8 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 
+import static java.awt.Color.*;
+
 public class MyDrawPanel extends JPanel {
 
     public void paintComponent(Graphics g){
@@ -26,6 +28,9 @@ public class MyDrawPanel extends JPanel {
         GradientPaint gradient = new GradientPaint(70,70,startColor,150,150,endColor);
         g2d.setPaint(gradient);
         g2d.fillOval(70,70,100,100);
+
+        g.setColor(orange);
+//        g.fillOval(x,y,100,100);
 
 //        Color randomColor = new Color(red, green, blue);
 //        g.setColor(randomColor);
