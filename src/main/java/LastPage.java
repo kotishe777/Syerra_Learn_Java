@@ -1,3 +1,3 @@
 public class LastPage {
-    int lastPage = 493;
+    int lastPage = 507;
 }
