@@ -1,6 +1,6 @@
 package collections;
 
-public class Song {
+public class Song implements Comparable<Song>{
     String title;
     String artist;
     String rating;
@@ -31,5 +31,9 @@ public class Song {
 
     public String toString(){
         return title;
+    }
+
+    public int compareTo(Song s) {
+        return title.compareTo(s.title);
     }
 }
