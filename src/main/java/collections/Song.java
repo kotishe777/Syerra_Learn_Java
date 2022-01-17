@@ -1,5 +1,7 @@
 package collections;
 
+import java.util.Objects;
+
 public class Song implements Comparable<Song>{
     String title;
     String artist;
@@ -35,5 +37,14 @@ public class Song implements Comparable<Song>{
 
     public int compareTo(Song s) {
         return title.compareTo(s.title);
+    }
+
+    public boolean equals(Object aSong) {
+        Song s = (Song) aSong;
+        return getTitle().equals(s.getTitle());
+    }
+
+    public int hashCode() {
+        return title.hashCode();
     }
 }
